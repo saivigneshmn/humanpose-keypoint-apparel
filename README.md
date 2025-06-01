@@ -11,7 +11,7 @@
 
   <p>
     <a href="paper/IJIRT172021_PAPER.pdf" target="_blank">
-      <img alt="Paper PDF" src="https://img.shields.io/badge/Paper-PDF-blue">
+      <img alt="Paper PDF" src="[https://img.shields.io/badge/Paper-PDF-blue](https://ijirt.org/publishedpaper/IJIRT172021_PAPER.pdf)">
     </a>
     <a href="LICENSE">
       <img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg">
