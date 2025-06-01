@@ -1,9 +1,6 @@
 # Human Pose Keypoint Detection for Apparel Sizing 👕
 
-<div align="center">
-  <img href="https://kemtai.com/wp-content/uploads/2022/12/65603fig.png"> alt="Apparel Sizing with Pose Estimation" width="800">
-  
-  <h1>Automated Apparel Sizing via Pose Keypoint Detection</h1>
+![Apparel Sizing with Pose Estimation](https://kemtai.com/wp-content/uploads/2022/12/65603fig.png)
   
   <p>
     <strong>MoveNet + MediaPipe implementation for accurate garment measurements</strong>
