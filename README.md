@@ -29,14 +29,7 @@ Official implementation for the paper **"Human Pose Keypoint Detection for Appar
 
 ## 🛠️ Technical Architecture
 
-graph TD
-A[Input Image/Video] --> B[MoveNet Keypoint Detection]
-B --> C[MediaPipe Pose Refinement]
-C --> D[Pixel-to-CM Calibration]
-D --> E[Measurement Calculation]
-E --> F[Sleeve Length]
-E --> G[Shoulder Width]
-E --> H[Pant Length]
+,,,,,,,,,,,,,,,,,,,,,,,,,
 
 ## 🚀 Quick Start
 
