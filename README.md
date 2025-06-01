@@ -1,7 +1,7 @@
 # Human Pose Keypoint Detection for Apparel Sizing 👕
 
 <div align="center">
-  <img src="figures/header.png" alt="Apparel Sizing with Pose Estimation" width="800">
+  <img src="https://kemtai.com/blog/the-complete-guide-to-human-pose-estimation/" alt="Apparel Sizing with Pose Estimation" width="800">
   
   <h1>Automated Apparel Sizing via Pose Keypoint Detection</h1>
   
