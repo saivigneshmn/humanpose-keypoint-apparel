@@ -73,4 +73,37 @@ dnnlib
 ---
 
 ## 🚀 Run the Tool
+Update the following variables in `src/garment_measurement.py`:
 
+```python
+reference_image_path = 'path/to/reference.jpg'   # object with known width
+movenet_model_path = 'path/to/movenet.pb'
+video_source = 'path/to/video.mp4'  # or 0 for webcam
+```
+
+Then run:
+```bash
+python src/garment_measurement.py
+```
+
+Press `q` to quit the video.
+
+---
+
+## 📚 Citation
+
+If you use this project in your research, please cite:
+
+```
+Macha Naga Sai Vignesh, Saraswathi D, Kanumuri Nitin Varma, Naveen Nishal S.
+"Human Pose Keypoint Detection for Apparel Sizing: Accurate Measurement Estimation using MediaPipe and MoveNet"
+Vellore Institute of Technology, Chennai.
+```
+
+---
+
+## 📄 License
+
+Apache License 2.0 — Free to use, modify, and distribute with attribution.
+
+---
