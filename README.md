@@ -16,13 +16,13 @@ This project implements an automated **garment size measurement** tool using sta
 
 ## 🏗️ Architecture
 
-![Architecture](assets/architecture.png)
+![Architecture](assets/all_one.png)
 
 ---
 
 ## 🎥 Demo
 
-![Demo](assets/demo.gif)
+![Demo](assets/output.png)
 
 ---
 
