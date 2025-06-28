@@ -1,8 +1,8 @@
 # 👕 Garment Size Detector using MoveNet & MediaPipe
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
-![Platform](https://img.shields.io/badge/platform-Google%20Colab-yellow)
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
+[![IJIRT Publication](https://img.shields.io/badge/Published%20in-IJIRT-red?style=for-the-badge&logo=readthedocs)](https://ijirt.org/publishedpaper/IJIRT172021_PAPER.pdf)
 
 ---
 
