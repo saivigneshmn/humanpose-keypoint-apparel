@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
-[![IJIRT Publication](https://img.shields.io/badge/Published%20in-IJIRT-red?style=for-the-badge&logo=readthedocs)](https://ijirt.org/publishedpaper/IJIRT172021_PAPER.pdf)
+[![IJIRT Publication](https://img.shields.io/badge/Published_in-IJIRT-red?logo=readthedocs&logoColor=white)](https://ijirt.org/publishedpaper/IJIRT172021_PAPER.pdf)
 
 ---
 
