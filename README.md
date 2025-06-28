@@ -1,101 +1,76 @@
-# Human Pose Keypoint Detection for Apparel Sizing 👕
+# 👕 Garment Size Detector using MoveNet & MediaPipe
 
-![Apparel Sizing with Pose Estimation](https://kemtai.com/wp-content/uploads/2022/12/65603fig.png)
-  
-  <p>
-    <strong>MoveNet + MediaPipe implementation for accurate garment measurements</strong>
-  </p>
+![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+![Platform](https://img.shields.io/badge/platform-Google%20Colab-yellow)
+![Python](https://img.shields.io/badge/python-3.8+-blue)
 
-  <p>
-    <a href="https://ijirt.org/publishedpaper/IJIRT172021_PAPER.pdf">
-      <img alt="Paper PDF" src="https://img.shields.io/badge/Paper-PDF-blue">
-    </a>
-    <a href="LICENSE">
-      <img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg">
-    </a>
-  </p>
-</div>
+---
 
-## 🔍 Project Overview
+## 📌 Overview
 
-Official implementation for the paper **"Human Pose Keypoint Detection for Apparel Sizing: Accurate Measurement Estimation using MediaPipe and MoveNet"** (Published in IJIRT | Volume 11 Issue 8 | January 2025)
+This project implements an automated **garment size measurement** tool using state-of-the-art keypoint detection models — **MediaPipe** and **MoveNet** — to extract accurate body measurements (shoulder width, sleeve length, leg length) in real time from videos or webcam input.
 
-**Key Features:**
-- Real-time body measurement extraction (sleeve length, shoulder width, pant length)
-- Pixel-to-centimeter calibration system
-- MoveNet Thunder + MediaPipe integration
-- Average MAE of 1.17cm across measurements
-- 41.7 FPS processing speed
+> 🔬 Originally designed for **e-commerce and retail automation**, this system has strong applications in **healthcare** as well, where accurate body sizing is critical. Built to reduce manual errors and hallucinations, the framework was validated using real-time videos and reference images.
 
-## 🛠️ Technical Architecture
+---
 
-,,,,,,,,,,,,,,,,,,,,,,,,,
+## 🏗️ Architecture
 
-## 🚀 Quick Start
+![Architecture](assets/architecture.png)
 
-### Installation
+---
 
-git clone https://github.com/yourusername/apparel-sizing.git
-cd apparel-sizing
+## 🎥 Demo
 
-Create virtual environment
-python -m venv venv
-source venv/bin/activate # Linux/Mac
+![Demo](assets/demo.gif)
 
-venv\Scripts\activate # Windows
-Install dependencies
+---
+
+## 📦 Features
+
+- 📏 Pixel-to-centimeter calibration using reference object
+- 🎯 Keypoint detection with MoveNet Thunder
+- 🕺 Full-body MediaPipe pose landmarks
+- 🧠 Real-time frame analysis with OpenCV
+- 📊 Displays measurements on video overlay
+
+---
+
+## 🔍 Key Measurements
+
+| Measurement Type | Accuracy (%) | Ground Truth (cm) | Estimated (cm) | MAE (cm) |
+|------------------|--------------|--------------------|----------------|----------|
+| Shoulder Width   | 95.99%       | 37.89              | 36.37          | 0.8      |
+| Sleeve Length    | 94.99%       | 64.72              | 61.48          | 1.2      |
+| Waist Width      | 96.01%       | 21.07              | 20.23          | 0.84     |
+| Pant Length      | 95.00%       | 94.20              | 89.49          | 1.5      |
+
+---
+
+## 🛠️ Setup Instructions
+
+```bash
+# 1. Clone the repository
+https://github.com/yourusername/garment-size-detector.git
+cd garment-size-detector
+
+# 2. Install dependencies
 pip install -r requirements.txt
+```
 
+---
 
+## ✅ Requirements
 
-### Basic Usage
-from core.pipeline import ApparelSizingSystem
+```txt
+opencv-python
+mediapipe
+numpy
+tensorflow
+dnnlib
+```
 
-Initialize system
-sizing_system = ApparelSizingSystem(
-movenet_thunder="models/movenet_thunder.tflite",
-ref_height_cm=175 # Reference height for calibration
-)
+---
 
-Process image
-measurements = sizing_system.estimate("data/raw/test_image.jpg")
+## 🚀 Run the Tool
 
-print(f"""
-Shoulder Width: {measurements['shoulder_width']:.1f} cm
-Sleeve Length: {measurements['sleeve_length']:.1f} cm
-Pant Length: {measurements['pant_length']:.1f} cm
-""")
-
-
-## 📊 Key Technical Components
-
-### 1. Measurement Algorithms
-**Shoulder Width Calculation:**
-
-def calculate_shoulder_width(left_shoulder, right_shoulder, scale):
-return np.linalg.norm(left_shoulder - right_shoulder) * scale
-
-
-**Pixel-to-Centimeter Calibration:**
-
-def get_scale_factor(ref_height_px, ref_height_cm=175):
-return ref_height_cm / ref_height_px # From neck to hip distance
-
-
-
-### 2. Performance Metrics
-| Measurement       | MAE (cm) | PCK@0.5 (%) |
-|--------------------|----------|-------------|
-| Sleeve Length      | 1.2      | 95.2        |
-| Shoulder Width     | 0.8      | 97.8        |
-| Pant Length        | 1.5      | 94.9        |
-
-## 🤝 Contributors
-- Macha Naga Sai Vignesh
-- Kanumuri Nitin Varma
-- Naveen Nishal Singuru
-
-<div align="center">
-  <img src="figures/measurement_demo.gif" alt="Demo" width="600">
-  <p><em>Real-time measurement demonstration</em></p>
-</div>
