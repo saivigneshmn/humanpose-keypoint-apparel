@@ -1,0 +1,8 @@
+opencv-python
+mediapipe
+numpy
+tensorflow
+Pillow
+
+matplotlib
+dnnlib
