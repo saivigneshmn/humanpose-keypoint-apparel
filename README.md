@@ -14,19 +14,22 @@ This project implements an automated **garment size measurement** tool using sta
 
 ---
 
-## 🏗️ Architecture  
-<table align="center">
-  <tr>
-    <td><img src="assets/all_one.png" width="300"/></td>
-    <td><img src="assets/all_two.png" width="300"/></td>
-  </tr>
-  <tr align="center">
-    <td><b>Architecture Overview</b></td>
-    <td><b>Pose Detection Pipeline</b></td>
-  </tr>
-</table>
+## 🏗️ Architecture(s)  
 
-## 🎥 Demo  
+<p align="center">
+  <img src="assets/all_one.png" width="520px" style="margin-right: 15px;"/>
+  <img src="assets/all_two.png" width="520px"/>
+</p>
+
+<p align="center">
+  <b>Architecture Overview</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Pose Detection Pipeline</b>
+</p>
+
+---
+
+## 🎥 Outcomes  
+
 <p align="center">
   <img src="assets/outcomes.png" width="600"/>
 </p>
